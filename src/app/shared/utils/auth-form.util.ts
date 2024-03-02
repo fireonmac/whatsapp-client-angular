@@ -11,8 +11,8 @@ export class AuthFormUtil {
       '',
       [
         Validators.required,
-        Validators.min(AuthFormConfig.PasswordMinLength),
-        Validators.max(AuthFormConfig.PasswordMaxLength),
+        Validators.minLength(AuthFormConfig.PasswordMinLength),
+        Validators.maxLength(AuthFormConfig.PasswordMaxLength),
       ],
     ];
   }
